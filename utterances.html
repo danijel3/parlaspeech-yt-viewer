@@ -11,6 +11,12 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.datatables.net/v/dt/dt-1.13.4/b-2.3.6/b-colvis-2.3.6/b-html5-2.3.6/datatables.min.css"
+          rel="stylesheet"/>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.13.4/b-2.3.6/b-colvis-2.3.6/b-html5-2.3.6/datatables.min.js"></script>
+
+
 </head>
 <body>
 <div class="title">
@@ -19,14 +25,15 @@
 </div>
 
 <div class="content">
-    <div class="intro">
-        <p>Choose version:</p>
-        <ul>
-            <li><a href="utterances.html?index=croatian">Croatian</a></li>
-            <li><a href="utterances.html?index=polish">Polish</a></li>
-            <li><a href="utterances.html?index=serbian">Serbian</a></li>
-        </ul>
+
+    <div class="topbtn">
+        <a href="index.html">Back to index</a>
     </div>
+
+    <table id="utterances" class="cell-border compact stripe"></table>
 </div>
+
+<script src="js/utterances.js"></script>
+
 </body>
 </html>
