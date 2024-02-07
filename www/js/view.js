@@ -75,8 +75,10 @@ function playSegment(ev) {
     player.playVideo();
 }
 
+let remote_url = 'https://raw.githubusercontent.com/danijel3/parlaspeech-yt-viewer/main/';
+
 async function render_page() {
-    const response = await fetch("corpora/data/" + index + "/" + doc_id + ".json");
+    const response = await fetch(remote_url + "corpora/data/" + index + "/" + doc_id + ".json");
     const segments = await response.json();
 
     const elSegments = document.getElementById('segments');

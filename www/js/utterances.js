@@ -1,8 +1,10 @@
 let doc_url = new URL(document.location.href);
 let index = doc_url.searchParams.get('index');
 
+let remote_url = 'https://raw.githubusercontent.com/danijel3/parlaspeech-yt-viewer/main/';
+
 let datatable = new DataTable('#utterances', {
-    'ajax': 'corpora/index/' + index + '.json',
+    'ajax': remote_url + 'corpora/index/' + index + '.json',
     columns: [
         {data: 'name', title: 'Name'},
         {
